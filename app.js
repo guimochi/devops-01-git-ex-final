@@ -8,7 +8,6 @@ const today = new Date();
 
 // Getting full month name (e.g. "June")
 const month = today.toLocaleString("default", { month: "long" });
-console.log(month);
 
 // View Engine Setup
 app.set("views", path.join(__dirname));
@@ -16,7 +15,7 @@ app.set("view engine", "hbs");
 
 app.get("/", function (req, res) {
   res.render("./views/Home", {
-    title: "My new title",
+    title: "KGB(Y)",
     month: month,
     cards: [
       {
